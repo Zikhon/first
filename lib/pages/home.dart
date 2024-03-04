@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:first/constants/colors.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -11,13 +12,19 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: CustomColor.scaffoldBg,
       body: ListView(
         children: [
           //main
           Container(
             height: 500,
             width: double.maxFinite,
-            // color: Colors.blueGrey,
+            child: Row(
+              children: [
+              Text("ZEE"),
+              TextButton(onPressed: (){}, child: child)
+            ],
+            ),
           ),
            //Skills
           Container(
