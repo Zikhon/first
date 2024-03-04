@@ -22,7 +22,9 @@ class _HomeState extends State<Home> {
             child: Row(
               children: [
               Text("ZEE"),
-              TextButton(onPressed: (){}, child: child)
+              TextButton(onPressed: (){}, 
+              child: Text("button"),
+               )
             ],
             ),
           ),
