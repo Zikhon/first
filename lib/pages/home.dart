@@ -1,3 +1,4 @@
+import 'package:first/constants/nav_items.dart';
 import 'package:flutter/material.dart';
 import 'package:first/constants/colors.dart';
 
@@ -33,12 +34,17 @@ class _HomeState extends State<Home> {
               children: [
               Text("Zikhona"),
               Spacer(),
-              for (int i = 0; i <5; i++)
+              for (int i = 0; i < navTitles.length; i++)
               Padding(
                 padding: const EdgeInsets.only(right: 20.0),
                 child: TextButton(
                   onPressed: (){}, 
-                child: Text("button"),
+                child: Text(navTitles [i], style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w500,
+                  color: CustomColor.whitePrimary,
+                ),
+                ),
                  ),
               )
             ],
