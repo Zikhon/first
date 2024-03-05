@@ -22,7 +22,10 @@ class _HomeState extends State<Home> {
             child: Row(
               children: [
               Text("ZEE"),
-              TextButton(onPressed: (){}, 
+              Spacer(),
+              for (int i = 0; i <5; i++)
+              TextButton(
+                onPressed: (){}, 
               child: Text("button"),
                )
             ],
