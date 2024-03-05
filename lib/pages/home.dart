@@ -1,4 +1,5 @@
 // import 'package:first/constants/nav_items.dart';
+import 'package:first/styles/style.dart';
 import 'package:first/widgets/header_desktop.dart';
 import 'package:first/widgets/logo.dart';
 import 'package:flutter/material.dart';
@@ -20,23 +21,7 @@ class _HomeState extends State<Home> {
         children: [
           //main
           // HeaderDesktop(),
-          Container(
-            height: 50.0,
-            margin: const EdgeInsets.fromLTRB(40, 5, 20, 5),
-            child: Row(children: [
-              Logo(
-                onTap: () {
-            
-                },
-              ),
-             const Spacer(),
-             IconButton(
-              onPressed: (){},
-              icon: const Icon(Icons.menu),
-              ),
-            ],
-            ),
-          ),
+         
           //Skills
           Container(
             height: 500,

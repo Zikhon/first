@@ -1,5 +1,6 @@
 import 'package:first/constants/colors.dart';
 import 'package:first/constants/nav_items.dart';
+import 'package:first/styles/style.dart';
 import 'package:first/widgets/logo.dart';
 import 'package:flutter/material.dart';
 
@@ -16,15 +17,7 @@ class HeaderDesktop extends StatelessWidget {
               horizontal: 20.0,
             ),
             width: double.maxFinite,
-            // decoration: BoxDecoration(
-            //   gradient: const LinearGradient(
-            //     colors: [
-            //       Colors.transparent,
-            //       CustomColor.bgLight1,
-            //     ],
-            //   ),
-            //   borderRadius: BorderRadius.circular(100),
-            // ),
+            decoration: kHeaderDecoraion,
             child: Row(
               children: [
                Logo(onTap: () {
