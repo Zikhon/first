@@ -17,7 +17,8 @@ class _HomeState extends State<Home> {
         children: [
           //main
           Container(
-            height: 500,
+            height: 60.0,
+            margin: EdgeInsets.symmetric(vertical: 10.0,horizontal: 20.0,),
             width: double.maxFinite,
             decoration: BoxDecoration(
               gradient: LinearGradient(
@@ -26,10 +27,11 @@ class _HomeState extends State<Home> {
                   CustomColor.bgLight1,
                   ],
                   ),
+                  borderRadius: BorderRadius.circular(100),
             ),
             child: Row(
               children: [
-              Text("ZEE"),
+              Text("Zikhona"),
               Spacer(),
               for (int i = 0; i <5; i++)
               TextButton(
@@ -49,7 +51,6 @@ class _HomeState extends State<Home> {
           Container(
             height: 500,
             width: double.maxFinite,
-            // color: Colors.blueGrey,
           ),
              //Contact
           Container(
@@ -61,7 +62,6 @@ class _HomeState extends State<Home> {
           Container(
             height: 500,
             width: double.maxFinite,
-            // color: Colors.blueGrey,
           )
         ],
         ),
