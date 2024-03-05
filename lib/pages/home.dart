@@ -19,61 +19,74 @@ class _HomeState extends State<Home> {
           //main
           Container(
             height: 60.0,
-            margin: EdgeInsets.symmetric(vertical: 10.0,horizontal: 20.0,),
+            margin: EdgeInsets.symmetric(
+              vertical: 10.0,
+              horizontal: 20.0,
+            ),
             width: double.maxFinite,
             decoration: BoxDecoration(
               gradient: LinearGradient(
                 colors: [
                   Colors.transparent,
                   CustomColor.bgLight1,
-                  ],
-                  ),
-                  borderRadius: BorderRadius.circular(100),
+                ],
+              ),
+              borderRadius: BorderRadius.circular(100),
             ),
             child: Row(
               children: [
-              Text("Zikhona"),
-              Spacer(),
-              for (int i = 0; i < navTitles.length; i++)
-              Padding(
-                padding: const EdgeInsets.only(right: 20.0),
-                child: TextButton(
-                  onPressed: (){}, 
-                child: Text(navTitles [i], style: TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.w500,
-                  color: CustomColor.whitePrimary,
+                Text(
+                  "Zikhona",
+                  style: TextStyle(
+                    fontSize: 22,
+                    fontWeight: FontWeight.bold,
+                    decoration: TextDecoration.underline,
+                    color: CustomColor.yellowSecondary,
+                  ),
                 ),
-                ),
-                 ),
-              )
-            ],
+                Spacer(),
+                for (int i = 0; i < navTitles.length; i++)
+                  Padding(
+                    padding: const EdgeInsets.only(right: 20.0),
+                    child: TextButton(
+                      onPressed: () {},
+                      child: Text(
+                        navTitles[i],
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w500,
+                          color: CustomColor.whitePrimary,
+                        ),
+                      ),
+                    ),
+                  )
+              ],
             ),
           ),
-           //Skills
+          //Skills
           Container(
             height: 500,
             width: double.maxFinite,
             color: Colors.blueGrey,
           ),
-           //Projects
+          //Projects
           Container(
             height: 500,
             width: double.maxFinite,
           ),
-             //Contact
+          //Contact
           Container(
             height: 500,
             width: double.maxFinite,
             color: Colors.blueGrey,
           ),
-             //Footer
+          //Footer
           Container(
             height: 500,
             width: double.maxFinite,
           )
         ],
-        ),
+      ),
     );
   }
 }
