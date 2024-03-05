@@ -16,19 +16,19 @@ class HeaderDesktop extends StatelessWidget {
               horizontal: 20.0,
             ),
             width: double.maxFinite,
-            decoration: BoxDecoration(
-              gradient: const LinearGradient(
-                colors: [
-                  Colors.transparent,
-                  CustomColor.bgLight1,
-                ],
-              ),
-              borderRadius: BorderRadius.circular(100),
-            ),
+            // decoration: BoxDecoration(
+            //   gradient: const LinearGradient(
+            //     colors: [
+            //       Colors.transparent,
+            //       CustomColor.bgLight1,
+            //     ],
+            //   ),
+            //   borderRadius: BorderRadius.circular(100),
+            // ),
             child: Row(
               children: [
                Logo(onTap: () {
-                
+
                },),
                 const Spacer(),
                 for (int i = 0; i < navTitles.length; i++)
