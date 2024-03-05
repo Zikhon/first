@@ -19,6 +19,14 @@ class _HomeState extends State<Home> {
           Container(
             height: 500,
             width: double.maxFinite,
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [
+                  Colors.transparent,
+                  CustomColor.bgLight1,
+                  ],
+                  ),
+            ),
             child: Row(
               children: [
               Text("ZEE"),
