@@ -34,10 +34,13 @@ class _HomeState extends State<Home> {
               Text("Zikhona"),
               Spacer(),
               for (int i = 0; i <5; i++)
-              TextButton(
-                onPressed: (){}, 
-              child: Text("button"),
-               )
+              Padding(
+                padding: const EdgeInsets.only(right: 20.0),
+                child: TextButton(
+                  onPressed: (){}, 
+                child: Text("button"),
+                 ),
+              )
             ],
             ),
           ),
