@@ -1,4 +1,5 @@
-// import 'package:first/constants/nav_items.dart';
+import 'package:first/constants/nav_items.dart';
+import 'package:first/widgets/header_desktop.dart';
 import 'package:flutter/material.dart';
 import 'package:first/constants/colors.dart';
 
@@ -17,7 +18,7 @@ class _HomeState extends State<Home> {
       body: ListView(
         children: [
           //main
- 
+          HeaderDesktop(),
           //Skills
           Container(
             height: 500,

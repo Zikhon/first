@@ -10,13 +10,13 @@ class HeaderDesktop extends StatelessWidget {
     return 
              Container(
             height: 60.0,
-            margin: EdgeInsets.symmetric(
+            margin: const EdgeInsets.symmetric(
               vertical: 10.0,
               horizontal: 20.0,
             ),
             width: double.maxFinite,
             decoration: BoxDecoration(
-              gradient: LinearGradient(
+              gradient: const LinearGradient(
                 colors: [
                   Colors.transparent,
                   CustomColor.bgLight1,
@@ -26,16 +26,8 @@ class HeaderDesktop extends StatelessWidget {
             ),
             child: Row(
               children: [
-                Text(
-                  "ZM",
-                  style: TextStyle(
-                    fontSize: 22,
-                    fontWeight: FontWeight.bold,
-                    decoration: TextDecoration.underline,
-                    color: CustomColor.yellowSecondary,
-                  ),
-                ),
-                Spacer(),
+               
+                const Spacer(),
                 for (int i = 0; i < navTitles.length; i++)
                   Padding(
                     padding: const EdgeInsets.only(right: 20.0),
@@ -43,7 +35,7 @@ class HeaderDesktop extends StatelessWidget {
                       onPressed: () {},
                       child: Text(
                         navTitles[i],
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.w500,
                           color: CustomColor.whitePrimary,
