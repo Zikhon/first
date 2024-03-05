@@ -1,5 +1,6 @@
 import 'package:first/constants/colors.dart';
 import 'package:first/constants/nav_items.dart';
+import 'package:first/widgets/logo.dart';
 import 'package:flutter/material.dart';
 
 class HeaderDesktop extends StatelessWidget {
@@ -26,7 +27,9 @@ class HeaderDesktop extends StatelessWidget {
             ),
             child: Row(
               children: [
-               
+               Logo(onTap: () {
+                
+               },),
                 const Spacer(),
                 for (int i = 0; i < navTitles.length; i++)
                   Padding(
