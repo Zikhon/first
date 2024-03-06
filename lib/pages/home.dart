@@ -24,7 +24,7 @@ class _HomeState extends State<Home> {
           // HeaderDesktop(),
          Mobile(
           onMenuTap: (){},
-           onMenuTap: (){},
+           onLogoTap: (){},
          ),
           //Skills
           Container(
