@@ -18,7 +18,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: CustomColor.scaffoldBg,
-      endDrawer: ,
+      endDrawer: Drawer(),
       body: ListView(
         children: [
           //main
