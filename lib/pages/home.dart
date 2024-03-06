@@ -14,9 +14,11 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  final scaffoldKey = GlobalKey<ScaffoldState>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      key: scaffoldKey,
       backgroundColor: CustomColor.scaffoldBg,
       endDrawer: Drawer(),
       body: ListView(
@@ -24,8 +26,10 @@ class _HomeState extends State<Home> {
           //main
           // HeaderDesktop(),
          Mobile(
-          onMenuTap: (){},
-           onLogoTap: (){},
+            onLogoTap: (){},
+          onMenuTap: (){
+            scaffoldKey.currentState?.openEndDrawer();
+            },
          ),
           //Skills
           Container(
