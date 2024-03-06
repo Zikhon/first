@@ -2,8 +2,10 @@ import 'package:first/styles/style.dart';
 import 'package:first/widgets/logo.dart';
 import 'package:flutter/material.dart';
 
-class mobile extends StatelessWidget {
-  const mobile({super.key});
+class Mobile extends StatelessWidget {
+  const Mobile({super.key, this.onLogoTap, this.onMenuTap,});
+  final VoidCallback? onLogoTap;
+  final VoidCallback? onMenuTap;
 
   @override
   Widget build(BuildContext context) {
@@ -13,13 +15,11 @@ class mobile extends StatelessWidget {
             decoration: kHeaderDecoraion,
             child: Row(children: [
               Logo(
-                onTap: () {
-            
-                },
+                onTap: onLogoTap,
               ),
              const Spacer(),
              IconButton(
-              onPressed: (){},
+              onPressed: onMenuTap,
               icon: const Icon(Icons.menu),
               ),
              const SizedBox(width: 15),

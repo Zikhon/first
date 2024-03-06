@@ -2,6 +2,7 @@
 import 'package:first/styles/style.dart';
 import 'package:first/widgets/header_desktop.dart';
 import 'package:first/widgets/logo.dart';
+import 'package:first/widgets/mobile.dart';
 import 'package:flutter/material.dart';
 import 'package:first/constants/colors.dart';
 
@@ -21,7 +22,9 @@ class _HomeState extends State<Home> {
         children: [
           //main
           // HeaderDesktop(),
-         
+         Mobile(
+          onMenuTap: (){},
+         ),
           //Skills
           Container(
             height: 500,
