@@ -27,6 +27,14 @@ class _HomeState extends State<Home> {
           children: [
             for(int i=0; i<navIcons.length; i++)
             ListTile(
+              contentPadding: EdgeInsets.symmetric(
+                horizontal:30.0,
+                ),
+                titleTextStyle: TextStyle(
+                  color: CustomColor.whitePrimary,
+                  fontWeight: FontWeight.w600,
+                  fontSize: 16,
+                ),
               leading: Icon(navIcons[i]),
               title: Text(navTitles[i]),
             ),
