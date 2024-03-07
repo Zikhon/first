@@ -2,8 +2,8 @@ import 'package:first/constants/colors.dart';
 import 'package:first/constants/nav_items.dart';
 import 'package:flutter/material.dart';
 
-class Drawer extends StatelessWidget {
-  const Drawer({super.key, required Color backgroundColor, required ListView child});
+class CustomDrawer extends StatelessWidget {
+  const CustomDrawer ({super.key,});
 
   @override
   Widget build(BuildContext context) {
