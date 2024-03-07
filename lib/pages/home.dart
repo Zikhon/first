@@ -9,6 +9,8 @@ import 'package:flutter/material.dart';
 import 'package:first/constants/colors.dart';
 import 'package:flutter/rendering.dart';
 
+import '../constants/size.dart';
+
 class Home extends StatefulWidget {
   const Home({super.key});
 
@@ -24,12 +26,12 @@ class _HomeState extends State<Home> {
       return Scaffold(
         key: scaffoldKey,
         backgroundColor: CustomColor.scaffoldBg,
-        endDrawer: Constraints.maxWidth >= 600.0 ? null : const CustomDrawer(),
+        endDrawer: Constraints.maxWidth >= DesktopWidth ? null : const CustomDrawer(),
         body: ListView(
           scrollDirection: Axis.vertical,
           children: [
             //main
-            if (Constraints.maxWidth >= 600.0)
+            if (Constraints.maxWidth >= DesktopWidth)
               const HeaderDesktop()
             else
               Mobile(
