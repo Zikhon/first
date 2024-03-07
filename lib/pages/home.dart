@@ -20,7 +20,15 @@ class _HomeState extends State<Home> {
     return Scaffold(
       key: scaffoldKey,
       backgroundColor: CustomColor.scaffoldBg,
-      endDrawer: Drawer(),
+      endDrawer: Drawer(
+         backgroundColor: CustomColor.scaffoldBg,
+         child: ListView(
+          children: [
+            
+          ],
+         ),
+      ),
+
       body: ListView(
         children: [
           //main
