@@ -1,4 +1,4 @@
-// import 'package:first/constants/nav_items.dart';
+import 'package:first/constants/nav_items.dart';
 import 'package:first/constants/nav_items.dart';
 import 'package:first/styles/style.dart';
 import 'package:first/widgets/header_desktop.dart';
@@ -21,26 +21,7 @@ class _HomeState extends State<Home> {
     return Scaffold(
       key: scaffoldKey,
       backgroundColor: CustomColor.scaffoldBg,
-      endDrawer: Drawer(
-         backgroundColor: CustomColor.scaffoldBg,
-         child: ListView(
-          children: [
-            for(int i=0; i<navIcons.length; i++)
-            ListTile(
-              contentPadding: EdgeInsets.symmetric(
-                horizontal:30.0,
-                ),
-                titleTextStyle: const TextStyle(
-                  color: CustomColor.whitePrimary,
-                  fontWeight: FontWeight.w600,
-                  fontSize: 16,
-                ),
-              leading: Icon(navIcons[i]),
-              title: Text(navTitles[i]),
-            ),
-          ],
-         ),
-      ),
+      endDrawer: const Drawer(),
 
       body: ListView(
         children: [
