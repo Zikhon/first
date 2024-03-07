@@ -1,4 +1,5 @@
 // import 'package:first/constants/nav_items.dart';
+import 'package:first/constants/nav_items.dart';
 import 'package:first/styles/style.dart';
 import 'package:first/widgets/header_desktop.dart';
 import 'package:first/widgets/logo.dart';
@@ -24,7 +25,11 @@ class _HomeState extends State<Home> {
          backgroundColor: CustomColor.scaffoldBg,
          child: ListView(
           children: [
-            
+            for(int i=0; i<navIcons.length; i++)
+            ListTile(
+              leading: Icon(navIcons[i]),
+              title: Text(navTitles[i]),
+            ),
           ],
          ),
       ),
